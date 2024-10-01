@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Karakunku Farm</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background-color: #4CAF50;
+            color: white;
+            text-align: center;
+            padding: 1rem;
+        }
+        section {
+            margin: 20px;
+            padding: 20px;
+            background-color: white;
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+        .button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            text-align: center;
+            display: inline-block;
+            border-radius: 5px;
+            text-decoration: none;
+            cursor: pointer;
+        }
+        .info {
+            display: none;
+            margin-top: 20px;
+            background-color: #e7f5e8;
+            padding: 10px;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Welcome to Karakunku Farm</h1>
+    <p>Promoting Sustainable Agriculture</p>
+</header>
+
+<section>
+    <h2>About Us</h2>
+    <p>Karakunku Farm is located in Jarra Barrow Kunda, The Gambia. We use solar-powered automated drip irrigation to ensure sustainable food production and environmental conservation.</p>
+</section>
+
+<section>
+    <h2>Our Services</h2>
+    <ul>
+        <li>Vegetable Production</li>
+        <li>Sustainable Irrigation Solutions</li>
+        <li>Farmer Awareness & Training Programs</li>
+    </ul>
+</section>
+
+<section>
+    <h2>Learn More</h2>
+    <button class="button" onclick="showInfo()">Click to Learn More</button>
+    <div class="info" id="farmInfo">
+        <p>At Karakunku Farm, we are dedicated to supporting local farmers through training and innovative irrigation systems. Our goal is to enhance food security and environmental sustainability.</p>
+    </div>
+</section>
+
+<section>
+    <h2>Contact Us</h2>
+    <p>Email: info@karakunkufarm.gm</p>
+    <p>Phone: +220 1234567</p>
+</section>
+
+<footer>
+    <p>&copy; 2024 Karakunku Farm. All Rights Reserved.</p>
+</footer>
+
+<script>
+    function showInfo() {
+        var info = document.getElementById("farmInfo");
+        if (info.style.display === "none") {
+            info.style.display = "block";
+        } else {
+            info.style.display = "none";
+        }
+    }
+</script>
+
+</body>
+</html>
